@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./Screenshot/desktop-normal.png.jpg)
+![Desktop](./Screenshot/desktop-normal.png)
 ![Desktop2](./Screenshot/desktop-errors.png)
 ![Mobile](./Screenshot/mobile.png)
 
@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [here](https://glowing-muffin-e76356.netlify.app/)
 
 ## My process
 
@@ -59,5 +59,5 @@ Users should be able to:
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@anshFE97](https://www.frontendmentor.io/profile/anshFE97)
 
