@@ -1,0 +1,260 @@
+:root {
+   /* ### Primary */
+
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+
+/* ### Accent */
+
+--Blue: hsl(248, 32%, 49%);
+
+/* ### Neutral */
+
+--Dark-Blue: hsl(249, 10%, 26%);
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./images/bg-intro-mobile.png");
+    background-color: var(--Red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-main {
+    padding: 7rem 1rem 1rem;
+    width: 350px;
+}
+
+
+
+/*upper part of the form*/
+.container-above{
+    text-align: center;
+    color: #fff;
+    
+}
+
+.container-above h1 {
+    margin-bottom: 1.5rem;
+}
+
+.container-above p {
+    padding-inline: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+/*middle part with small text */
+.container-middle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+}
+
+.container-middle button {
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    background-color: var(--Blue);
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 10px 10px var(--Dark-Blue);
+}
+
+.container-middle button .intext {
+    display: block;
+    margin-top: 5px;
+    
+}
+
+/*form area that requires most work*/
+.container-below{
+    border: 1px solid red;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px var(--Dark-Blue);
+}
+
+.container-below .label {
+    position: relative;
+}
+
+.container-below form label .first, .second, .third, .fourth {
+    display: none;
+}
+
+.container-below .label span {
+    position: absolute;
+    left: 10px;
+    color: var(--Red);
+    font-weight: 600;
+    background-color: #fff;
+}
+
+
+
+.container-below form .error {
+    position: absolute;
+    right: 10px;
+    
+}
+
+.container-below form p {
+    color: red;
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+
+
+/*classes for js*/
+.active {
+    border: 2px solid var(--Red);
+}
+
+.display {
+    display: block !important;
+}
+
+/*end here*/
+
+.container-below form input {
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.container-below form .space {
+    margin-bottom: 1rem;
+}
+
+.container-below form button {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--Green);
+    color: #fff;
+    font-weight: 600;
+    word-spacing: 3px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+.container-below form button:hover {
+    background-color:hsl(154, 73%, 66%)
+}
+
+
+
+.container-below p {
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 90%;
+}
+
+.container-below p a {
+    color: var(--Red);
+    text-decoration: none;
+}
+
+.container-below .form input {
+    min-width: 100%;
+}
+
+
+/*other small things*/
+
+
+    .attribution { 
+        margin-top: 2rem;
+        font-size: 11px; text-align: center; 
+    }
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+
+
+
+
+
+
+
+@media (min-width: 550px) {
+
+        body {
+            background: url("./images/bg-intro-desktop.png");
+            background-color: var(--Red);
+        }
+
+        .container-main {
+            padding: 0;
+            min-width: 950px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 10% 90%;
+        }
+
+
+        /*top part*/
+
+        .container-above {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container-above h1 {
+            margin-bottom: 1.5rem;
+            font-size: 3.1rem;
+        }
+        
+        .container-above p {
+            padding-inline: 0;
+        }
+
+        /*middle button*/
+
+
+        .container-middle button {
+            height: 3.5rem;
+        }
+
+        .container-middle button .intext {
+            display: inline;
+        }
+
+
+        /*lower*/
+
+
+        .container-below p {
+            text-align: center;
+        }
+    }
